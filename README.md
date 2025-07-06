@@ -39,6 +39,8 @@ tc = ThompsonConstruction("(0|(1(01*(00)*0)*1)*)*")
 nfa = tc.toNFA()
 drawNFA(nfa, "nfa")
 ```
+![nfa](https://github.com/user-attachments/assets/46f29a52-2921-471c-b1dc-7c6ede2a6d83)
+
 ### NFA to DFA
 ```python
 from PowersetConstruction import PowersetConstruction
@@ -47,6 +49,8 @@ pc = PowersetConstruction(nfa)
 dfa = pc.toDFA()
 drawDFA(dfa)
 ```
+![dfa](https://github.com/user-attachments/assets/122c4c7c-48c1-4dab-a0ee-9a58264853e7)
+
 ### Minimize DFA
 ```python
 from Hopcroft import Hopcroft
@@ -55,7 +59,7 @@ hp = Hopcroft(dfa)
 dfa_min = hp.minimize()
 drawDFA(dfa_min, filename="dfa_min", comment="DFA minimized")
 ```
-
+![dfa_min](https://github.com/user-attachments/assets/4dc8e445-9285-408f-aa45-aa8bccd26ad0)
 
 ## Tests
 
