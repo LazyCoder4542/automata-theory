@@ -1,0 +1,7 @@
+numpy
+matplotlib
+pandas
+openpyxl
+scikit-learn
+beautifulsoup4
+graphviz
